@@ -19,6 +19,12 @@ class ViewController: UIViewController {
         
         john = Person(name: "John Applessd")
         unit4A = Apartment(unit: "4A")
+        
+        john!.apartment = unit4A
+        unit4A!.tenant = john
+        
+        john = nil
+        unit4A = nil
     }
     
     override func didReceiveMemoryWarning() {
