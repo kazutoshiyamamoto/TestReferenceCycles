@@ -10,17 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var john: Person?
+    var unit4A: Apartment?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        john = Person(name: "John Applessd")
+        unit4A = Apartment(unit: "4A")
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
 }
 
 class Person {
@@ -45,4 +49,6 @@ class Apartment {
         
     }
 }
+
+
 
